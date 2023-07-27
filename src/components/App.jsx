@@ -5,33 +5,33 @@ import HW2 from "./HW2/Profile";
 import HW3 from './HW3/App/App'
 import HW4 from './HW4/App/App'
 import HW5 from './HW5/App/App'
-import { Route, Routes, NavLink } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 
 export default function App() {
   return (
     <>
       <nav>
-        <NavLink style={{ marginRight: 20 }} to="/react-navigation/">
+        <Link style={{ marginRight: 20 }} to="/">
           Home
-        </NavLink>
-        <NavLink style={{ marginRight: 20 }} to="/HW1">
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/HW1">
           HW1
-        </NavLink>
-        <NavLink style={{ marginRight: 20 }} to="/HW2">
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/HW2">
           HW2
-        </NavLink>
-        <NavLink style={{ marginRight: 20 }} to="/HW3">
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/HW3">
           HW3
-        </NavLink>
-        <NavLink style={{ marginRight: 20 }} to="/HW4">
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/HW4">
           HW4
-        </NavLink>
-        <NavLink style={{ marginRight: 20 }} to="/HW5">
+        </Link>
+        <Link style={{ marginRight: 20 }} to="/HW5">
           HW5
-        </NavLink>
+        </Link>
       </nav>
       <Routes>
-        <Route path="/react-navigation/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route
           path="/HW1"
           element={
